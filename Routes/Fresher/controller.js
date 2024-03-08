@@ -2,7 +2,7 @@ import modelProduct from "./model.js";
 
 export const getItem = async(req,res) => {
     try{
-        const data = await modelProduct.find({}, {_id:0, __v:0});
+        const data = await modelProduct.find();
         res.status(222).send({
             status: "Success",
             response: data
