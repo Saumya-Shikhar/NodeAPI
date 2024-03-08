@@ -8,5 +8,5 @@ const productSchema = new mongoose.Schema({
     Address:String
 });
 
-const productModel = mongoose.model('Colleges',productSchema);
+const productModel = mongoose.model('colleges',productSchema);
 export default productModel;
